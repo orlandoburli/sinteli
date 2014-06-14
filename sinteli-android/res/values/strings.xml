@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sintel</string>
+    <string name="hello_world">Sintel Mobile app</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo_config">Condomínios</string>
+    
+    <string name="label_selecionar_config">Selecione o condomínio e clique em ENTRAR</string>
+    <string name="label_button_config">Condomínios</string>
+    <string name="label_login">Email</string>
+    <string name="label_senha">Senha</string>
+    
+    <string name="label_button_entrar">Entrar</string>
+    <string name="label_button_novo">Novo Condomínio</string>
+    <string name="label_button_voltar">Voltar</string>
+    <string name="label_button_salvar">Salvar</string>
+    <string name="label_button_excluir">Excluir</string>
+    
+    <string name="label_liberar_acesso_visitante">Liberar acesso (Visitante)</string>
+    <string name="label_liberar_acesso_prestador">Liberar acesso (Prestador)</string>
+    <string name="label_cancelar_liberacao">Cancelar Liberação</string>
+    <string name="label_meus_dados">Meus dados</string>
+    <string name="label_sair">Sair</string>
+    
+    <string name="label_config_nome">Nome</string>
+    <string name="label_config_host">Host</string>
+    <string name="label_config_padrao">Padrão</string>
+    <string name="label_config_chave">Chave</string>
+    
+    <string name="hint_nome_config">Nome do Condomínio</string>
+    <string name="hint_host_config">Endereço da internet</string>
+    <string name="hint_email_config">Email</string>
+    <string name="hint_senha_config">Senha</string>
+    <string name="hint_chave_config">Chave</string>
+    
+    <string name="label_sim">Sim</string>
+    <string name="label_nao">Não</string>
+
+</resources>

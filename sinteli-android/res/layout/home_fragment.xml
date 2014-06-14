@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_app"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:text="@string/hello_world"
+        android:textSize="18sp" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp" >
+
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/back_crimson"
+            android:drawableLeft="@drawable/sair"
+            android:text="@string/label_sair"
+            android:textColor="@color/cor_texto_app"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableRow1"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp" >
+
+        <Button
+            android:id="@+id/btnCancelarLiberacao"
+            android:layout_width="145dp"
+            android:layout_height="100dp"
+            android:background="@drawable/back_orange"
+            android:drawableTop="@drawable/cancelar"
+            android:text="@string/label_cancelar_liberacao"
+            android:textColor="@color/cor_texto_app"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnMeusDados"
+            android:layout_width="145dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_green"
+            android:drawableTop="@drawable/meus_dados"
+            android:text="@string/label_meus_dados"
+            android:textColor="@color/cor_texto_app"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableRow2"
+        android:layout_alignParentLeft="true"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/btnLiberarAcessoVisitante"
+            android:layout_width="145dp"
+            android:layout_height="120dp"
+            android:background="@drawable/back_dark_cyan"
+            android:drawableTop="@drawable/visitante"
+            android:text="@string/label_liberar_acesso_visitante"
+            android:textColor="@color/cor_texto_app"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnLiberarAcessoPrestador"
+            android:layout_width="145dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_dark_violet"
+            android:drawableTop="@drawable/prestador"
+            android:text="@string/label_liberar_acesso_prestador"
+            android:textColor="@color/cor_texto_app"
+            android:textSize="14sp" />
+    </TableRow>
+
+</RelativeLayout>

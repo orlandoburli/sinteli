@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4351544F1948D85F0071B153 /* NSInvalidCriptoKeyException.m in Sources */ = {isa = PBXBuildFile; fileRef = 4351544E1948D85F0071B153 /* NSInvalidCriptoKeyException.m */; };
+		43925E081947D50F009A54A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925E071947D50F009A54A8 /* Foundation.framework */; };
+		43925E0D1947D50F009A54A8 /* SinteliCripto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43925E0C1947D50F009A54A8 /* SinteliCripto.h */; };
+		43925E0F1947D50F009A54A8 /* SinteliCripto.m in Sources */ = {isa = PBXBuildFile; fileRef = 43925E0E1947D50F009A54A8 /* SinteliCripto.m */; };
+		43925E161947D50F009A54A8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925E151947D50F009A54A8 /* XCTest.framework */; };
+		43925E171947D50F009A54A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925E071947D50F009A54A8 /* Foundation.framework */; };
+		43925E191947D50F009A54A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925E181947D50F009A54A8 /* UIKit.framework */; };
+		43925E1C1947D50F009A54A8 /* libSinteliCripto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925E041947D50F009A54A8 /* libSinteliCripto.a */; };
+		43925E221947D50F009A54A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43925E201947D50F009A54A8 /* InfoPlist.strings */; };
+		43925E241947D50F009A54A8 /* SinteliCriptoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43925E231947D50F009A54A8 /* SinteliCriptoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43925E1A1947D50F009A54A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43925DFC1947D50F009A54A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43925E031947D50F009A54A8;
+			remoteInfo = SinteliCripto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43925E021947D50F009A54A8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				43925E0D1947D50F009A54A8 /* SinteliCripto.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4351544D1948D85F0071B153 /* NSInvalidCriptoKeyException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSInvalidCriptoKeyException.h; path = Exceptions/NSInvalidCriptoKeyException.h; sourceTree = "<group>"; };
+		4351544E1948D85F0071B153 /* NSInvalidCriptoKeyException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSInvalidCriptoKeyException.m; path = Exceptions/NSInvalidCriptoKeyException.m; sourceTree = "<group>"; };
+		43925E041947D50F009A54A8 /* libSinteliCripto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSinteliCripto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43925E071947D50F009A54A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43925E0B1947D50F009A54A8 /* SinteliCripto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SinteliCripto-Prefix.pch"; sourceTree = "<group>"; };
+		43925E0C1947D50F009A54A8 /* SinteliCripto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinteliCripto.h; sourceTree = "<group>"; };
+		43925E0E1947D50F009A54A8 /* SinteliCripto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinteliCripto.m; sourceTree = "<group>"; };
+		43925E141947D50F009A54A8 /* SinteliCriptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinteliCriptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43925E151947D50F009A54A8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		43925E181947D50F009A54A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		43925E1F1947D50F009A54A8 /* SinteliCriptoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SinteliCriptoTests-Info.plist"; sourceTree = "<group>"; };
+		43925E211947D50F009A54A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43925E231947D50F009A54A8 /* SinteliCriptoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinteliCriptoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43925E011947D50F009A54A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43925E081947D50F009A54A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43925E111947D50F009A54A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43925E161947D50F009A54A8 /* XCTest.framework in Frameworks */,
+				43925E1C1947D50F009A54A8 /* libSinteliCripto.a in Frameworks */,
+				43925E191947D50F009A54A8 /* UIKit.framework in Frameworks */,
+				43925E171947D50F009A54A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4351544C1948D8380071B153 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				4351544D1948D85F0071B153 /* NSInvalidCriptoKeyException.h */,
+				4351544E1948D85F0071B153 /* NSInvalidCriptoKeyException.m */,
+			);
+			name = Exceptions;
+			sourceTree = "<group>";
+		};
+		43925DFB1947D50F009A54A8 = {
+			isa = PBXGroup;
+			children = (
+				43925E091947D50F009A54A8 /* SinteliCripto */,
+				43925E1D1947D50F009A54A8 /* SinteliCriptoTests */,
+				43925E061947D50F009A54A8 /* Frameworks */,
+				43925E051947D50F009A54A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43925E051947D50F009A54A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43925E041947D50F009A54A8 /* libSinteliCripto.a */,
+				43925E141947D50F009A54A8 /* SinteliCriptoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43925E061947D50F009A54A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43925E071947D50F009A54A8 /* Foundation.framework */,
+				43925E151947D50F009A54A8 /* XCTest.framework */,
+				43925E181947D50F009A54A8 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43925E091947D50F009A54A8 /* SinteliCripto */ = {
+			isa = PBXGroup;
+			children = (
+				4351544C1948D8380071B153 /* Exceptions */,
+				43925E0C1947D50F009A54A8 /* SinteliCripto.h */,
+				43925E0E1947D50F009A54A8 /* SinteliCripto.m */,
+				43925E0A1947D50F009A54A8 /* Supporting Files */,
+			);
+			path = SinteliCripto;
+			sourceTree = "<group>";
+		};
+		43925E0A1947D50F009A54A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43925E0B1947D50F009A54A8 /* SinteliCripto-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43925E1D1947D50F009A54A8 /* SinteliCriptoTests */ = {
+			isa = PBXGroup;
+			children = (
+				43925E231947D50F009A54A8 /* SinteliCriptoTests.m */,
+				43925E1E1947D50F009A54A8 /* Supporting Files */,
+			);
+			path = SinteliCriptoTests;
+			sourceTree = "<group>";
+		};
+		43925E1E1947D50F009A54A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43925E1F1947D50F009A54A8 /* SinteliCriptoTests-Info.plist */,
+				43925E201947D50F009A54A8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43925E031947D50F009A54A8 /* SinteliCripto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43925E271947D50F009A54A8 /* Build configuration list for PBXNativeTarget "SinteliCripto" */;
+			buildPhases = (
+				43925E001947D50F009A54A8 /* Sources */,
+				43925E011947D50F009A54A8 /* Frameworks */,
+				43925E021947D50F009A54A8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SinteliCripto;
+			productName = SinteliCripto;
+			productReference = 43925E041947D50F009A54A8 /* libSinteliCripto.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		43925E131947D50F009A54A8 /* SinteliCriptoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43925E2A1947D50F009A54A8 /* Build configuration list for PBXNativeTarget "SinteliCriptoTests" */;
+			buildPhases = (
+				43925E101947D50F009A54A8 /* Sources */,
+				43925E111947D50F009A54A8 /* Frameworks */,
+				43925E121947D50F009A54A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43925E1B1947D50F009A54A8 /* PBXTargetDependency */,
+			);
+			name = SinteliCriptoTests;
+			productName = SinteliCriptoTests;
+			productReference = 43925E141947D50F009A54A8 /* SinteliCriptoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43925DFC1947D50F009A54A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sinteli Sistemas Inteligentes";
+			};
+			buildConfigurationList = 43925DFF1947D50F009A54A8 /* Build configuration list for PBXProject "SinteliCripto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43925DFB1947D50F009A54A8;
+			productRefGroup = 43925E051947D50F009A54A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43925E031947D50F009A54A8 /* SinteliCripto */,
+				43925E131947D50F009A54A8 /* SinteliCriptoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43925E121947D50F009A54A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43925E221947D50F009A54A8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43925E001947D50F009A54A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43925E0F1947D50F009A54A8 /* SinteliCripto.m in Sources */,
+				4351544F1948D85F0071B153 /* NSInvalidCriptoKeyException.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43925E101947D50F009A54A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43925E241947D50F009A54A8 /* SinteliCriptoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43925E1B1947D50F009A54A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43925E031947D50F009A54A8 /* SinteliCripto */;
+			targetProxy = 43925E1A1947D50F009A54A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43925E201947D50F009A54A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43925E211947D50F009A54A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43925E251947D50F009A54A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43925E261947D50F009A54A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43925E281947D50F009A54A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SinteliCripto.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SinteliCripto/SinteliCripto-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		43925E291947D50F009A54A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SinteliCripto.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SinteliCripto/SinteliCripto-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		43925E2B1947D50F009A54A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SinteliCripto/SinteliCripto-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SinteliCriptoTests/SinteliCriptoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		43925E2C1947D50F009A54A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SinteliCripto/SinteliCripto-Prefix.pch";
+				INFOPLIST_FILE = "SinteliCriptoTests/SinteliCriptoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43925DFF1947D50F009A54A8 /* Build configuration list for PBXProject "SinteliCripto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43925E251947D50F009A54A8 /* Debug */,
+				43925E261947D50F009A54A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43925E271947D50F009A54A8 /* Build configuration list for PBXNativeTarget "SinteliCripto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43925E281947D50F009A54A8 /* Debug */,
+				43925E291947D50F009A54A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43925E2A1947D50F009A54A8 /* Build configuration list for PBXNativeTarget "SinteliCriptoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43925E2B1947D50F009A54A8 /* Debug */,
+				43925E2C1947D50F009A54A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43925DFC1947D50F009A54A8 /* Project object */;
+}

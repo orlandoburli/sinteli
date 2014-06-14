@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\bin\x86\Debug\CriptoSintelLibTest.exe
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\bin\x86\Debug\CriptoSintelLibTest.pdb
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\bin\x86\Debug\CriptoSintelLib.dll
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\bin\x86\Debug\CriptoSintelLib.pdb
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\obj\x86\Debug\CriptoSintelLibTest.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\obj\x86\Debug\CriptoSintelLibTest.exe
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\obj\x86\Debug\CriptoSintelLibTest.pdb

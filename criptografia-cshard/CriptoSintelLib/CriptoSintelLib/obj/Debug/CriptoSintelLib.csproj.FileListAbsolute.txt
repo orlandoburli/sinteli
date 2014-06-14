@@ -1,0 +1,4 @@
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLib\bin\Debug\CriptoSintelLib.dll
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLib\bin\Debug\CriptoSintelLib.pdb
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLib\obj\Debug\CriptoSintelLib.dll
+\\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLib\obj\Debug\CriptoSintelLib.pdb
