@@ -114,7 +114,32 @@
     // loop dos caracteres
     for (int i = 0; i < numCaracteres; i++) {
         //
+        int x = [self getKeyPos:chave pos:keyPosition];
+        int start = i * 6;
+
+        NSRange range = NSMakeRange(start, 6);
+        NSString *item = [valor substringWithRange:range];
         
+        // Hexadecimal para decimal
+        unsigned int z = 0;
+        NSScanner *scanner = [NSScanner scannerWithString:item];
+        [scanner setScanLocation:1];
+        [scanner scanHexInt:&z];
+        
+        int y = (z / x / digito);
+        
+        char c = y;
+        NSString *strChar = [[NSString alloc] initWithFormat:@"%c", c];
+        
+        [self debug:strChar];
+        
+        [retorno appendString:strChar];
+        
+        keyPosition++;
+        
+        if (keyPosition >= [chave length]) {
+            keyPosition = 0;
+        }
     }
     
     return retorno;
