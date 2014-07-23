@@ -19,6 +19,7 @@ public class FontUtils {
 				if (child instanceof TextView) {
 					((TextView) child).setTypeface(tf);
 				}
+				
 			}
 
 		}

@@ -3,6 +3,7 @@ package br.com.orlandoburli.sinteli.model.be;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.ContentValues;
@@ -11,15 +12,17 @@ import android.database.Cursor;
 import android.os.AsyncTask;
 import br.com.orlandoburli.sinteli.model.be.exceptions.ConfigException;
 import br.com.orlandoburli.sinteli.model.be.services.ConfigLoginService;
+import br.com.orlandoburli.sinteli.model.be.services.RetornoLoginService;
 import br.com.orlandoburli.sinteli.model.dao.Dicionario;
-import br.com.orlandoburli.sinteli.model.dao.GerenciadorDao;
 import br.com.orlandoburli.sinteli.model.dao.Dicionario.Config;
 import br.com.orlandoburli.sinteli.model.dao.Dicionario.Config.Colunas;
+import br.com.orlandoburli.sinteli.model.dao.GerenciadorDao;
 import br.com.orlandoburli.sinteli.model.vo.ConfigVo;
 
 public class ConfigBe {
 
 	private Context context;
+	private RetornoLoginService retorno;
 
 	public ConfigBe(Context context) {
 		this.context = context;
@@ -38,13 +41,13 @@ public class ConfigBe {
 
 		GerenciadorDao dao = new GerenciadorDao(context);
 
+		checkPadrao(config);
+
 		try {
 			dao.getWritableDatabase().insert(Config.TABELA_CONFIG, null, getContentValues(config));
 		} finally {
 			dao.getWritableDatabase().close();
 		}
-
-		checkPadrao(config);
 	}
 
 	private ContentValues getContentValues(ConfigVo config) {
@@ -119,17 +122,17 @@ public class ConfigBe {
 		}
 	}
 
-	public boolean login(ConfigVo config) {
+	public boolean loginOld(ConfigVo config) {
 		// Login
 
-		ConfigLoginService service = new ConfigLoginService(config, context);
-		AsyncTask<String, String, String> task = service.execute("");
+		ConfigLoginService service = new ConfigLoginService(config, this, context);
+
+		AsyncTask<String, String, String> task = service.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
 		try {
 			String retorno = task.get();
 			JSONObject json = new JSONObject(retorno);
 			String isAcesso = json.getString("IsAcesso");
-
 			return isAcesso == null ? false : isAcesso.equals("true");
 
 		} catch (Exception e) {
@@ -137,6 +140,38 @@ public class ConfigBe {
 		}
 
 		return false;
+	}
+
+	public void login(ConfigVo config, RetornoLoginService retorno) {
+		ConfigLoginService service = new ConfigLoginService(config, this, context);
+
+		// Inicia a acao e aguarda o retorno
+		service.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+
+		// Field de acao de retorno
+		this.retorno = retorno;
+	}
+
+	public void retornoLogin(String dados) {
+		if (retorno != null) {
+
+			JSONObject json;
+			try {
+				json = new JSONObject(dados);
+				String isAcessoString = json.getString("IsAcesso");
+
+				boolean isAcesso = dados == null ? false : isAcessoString.equals("true");
+
+				retorno.onRetornoLogin(isAcesso);
+
+				return;
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+
+			retorno.onRetornoLogin(false);
+		}
+
 	}
 
 	public void checkPadrao(ConfigVo config) throws ConfigException {
@@ -226,6 +261,7 @@ public class ConfigBe {
 					item.setNome(cursor.getString(cursor.getColumnIndex(Colunas.NOME)));
 					item.setUsuario(cursor.getString(cursor.getColumnIndex(Colunas.USUARIO)));
 					item.setSenha(cursor.getString(cursor.getColumnIndex(Colunas.SENHA)));
+					item.setChaveCripto(cursor.getString(cursor.getColumnIndex(Colunas.CHAVE_CRIPTO)));
 					item.setPadrao(cursor.getInt(cursor.getColumnIndex(Colunas.PADRAO)) == 1 ? true : false);
 
 					list.add(item);

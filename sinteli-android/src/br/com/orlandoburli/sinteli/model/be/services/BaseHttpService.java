@@ -11,14 +11,12 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 
 public abstract class BaseHttpService extends AsyncTask<String, String, String> {
 
 	private Context context;
-	private ProgressDialog pdia;
 
 	public BaseHttpService(Context context) {
 		this.setContext(context);
@@ -71,9 +69,9 @@ public abstract class BaseHttpService extends AsyncTask<String, String, String> 
 	@Override
 	protected void onPreExecute() {
 		super.onPreExecute();
-		pdia = new ProgressDialog(getContext());
-		pdia.setMessage("Loading...");
-		pdia.show();
+//		pdia = new ProgressDialog(getContext());
+//		pdia.setMessage("Loading...");
+//		pdia.show();
 
 		System.out.println("Pre-execute");
 	}
@@ -81,7 +79,7 @@ public abstract class BaseHttpService extends AsyncTask<String, String, String> 
 	@Override
 	protected void onPostExecute(String result) {
 		super.onPostExecute(result);
-		pdia.dismiss();
+//		pdia.dismiss();
 		System.out.println("Post-execute");
 	}
 

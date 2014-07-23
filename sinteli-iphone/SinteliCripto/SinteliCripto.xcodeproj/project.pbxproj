@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4351544F1948D85F0071B153 /* NSInvalidCriptoKeyException.m in Sources */ = {isa = PBXBuildFile; fileRef = 4351544E1948D85F0071B153 /* NSInvalidCriptoKeyException.m */; };
 		43925E081947D50F009A54A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925E071947D50F009A54A8 /* Foundation.framework */; };
-		43925E0D1947D50F009A54A8 /* SinteliCripto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43925E0C1947D50F009A54A8 /* SinteliCripto.h */; };
+		43925E0D1947D50F009A54A8 /* SinteliCripto.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 43925E0C1947D50F009A54A8 /* SinteliCripto.h */; };
 		43925E0F1947D50F009A54A8 /* SinteliCripto.m in Sources */ = {isa = PBXBuildFile; fileRef = 43925E0E1947D50F009A54A8 /* SinteliCripto.m */; };
 		43925E161947D50F009A54A8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925E151947D50F009A54A8 /* XCTest.framework */; };
 		43925E171947D50F009A54A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925E071947D50F009A54A8 /* Foundation.framework */; };
@@ -30,14 +30,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		43925E021947D50F009A54A8 /* CopyFiles */ = {
+		43925E021947D50F009A54A8 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				43925E0D1947D50F009A54A8 /* SinteliCripto.h in CopyFiles */,
+				43925E0D1947D50F009A54A8 /* SinteliCripto.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -165,7 +166,7 @@
 			buildPhases = (
 				43925E001947D50F009A54A8 /* Sources */,
 				43925E011947D50F009A54A8 /* Frameworks */,
-				43925E021947D50F009A54A8 /* CopyFiles */,
+				43925E021947D50F009A54A8 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -303,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -326,7 +327,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -334,7 +335,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -343,6 +345,7 @@
 		43925E281947D50F009A54A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ORLANDO JUNIOR (LMX98M2DF3)";
 				DSTROOT = /tmp/SinteliCripto.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SinteliCripto/SinteliCripto-Prefix.pch";
@@ -355,6 +358,7 @@
 		43925E291947D50F009A54A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ORLANDO JUNIOR (LMX98M2DF3)";
 				DSTROOT = /tmp/SinteliCripto.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SinteliCripto/SinteliCripto-Prefix.pch";

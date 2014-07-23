@@ -2,7 +2,7 @@ package br.com.orlandoburli.sinteli.view.adapters;
 
 import java.util.List;
 
-import br.com.orlandoburli.sintel.R;
+import br.com.orlandoburli.sinteli.R;
 import br.com.orlandoburli.sinteli.model.vo.ConfigVo;
 import br.com.orlandoburli.sinteli.utils.FontUtils;
 import android.content.Context;

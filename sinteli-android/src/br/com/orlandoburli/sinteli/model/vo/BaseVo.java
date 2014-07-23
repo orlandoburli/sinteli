@@ -1,6 +1,10 @@
 package br.com.orlandoburli.sinteli.model.vo;
 
-public abstract class BaseVo {
+import java.io.Serializable;
+
+public abstract class BaseVo implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	private boolean isNew;
 

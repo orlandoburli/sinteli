@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<project name="biometria-applet" default="pack" basedir=".">
+    <property name="program" value="program"/>
+	<property name="class" value="bin"/>
+    <property name="dest" value="dest"/>
+    <property name="file" value="biometria-applet.jar"/>
+    <!-- Criar o diretório -->
+    <target name="mkdir">
+        <mkdir dir="${dest}"/>
+    </target>
+    <!-- Efetuar a limpeza -->
+    <target name="clear">
+        <delete file="${dest}/${file}"/>
+    </target>
+    <!-- Efetuar o pack -->
+    <target name="pack" depends="mkdir,clear">
+    	<copy todir="${program}">
+    		<fileset dir="${class}">
+    			<include name="**/*"/>
+	    	</fileset>
+    	</copy>
+    	<jar destfile="${dest}/${file}" basedir="${program}"/>
+    </target>
+</project>

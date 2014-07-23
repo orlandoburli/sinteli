@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Java\jdk1.5.0_10\bin\keytool.exe" -genkey -dname CN=CSIOnline -alias key -keystore D:\CSIONLINE\CSI_ESCOLAR\CSharpModel\web\BiometriaControl\biometria\jar\mykey.jks -storepass 123456 -validity 9999

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="build" name="Create Runnable Jar for Project biometria-applet">
+
+	<property name="temp.jar" value="//vmware-host/Shared Folders/Documents/Projetos/sinteli/biometria-applet/exportado/biometria-applet-search-temp.jar" />
+	<property name="final.jar" value="//vmware-host/Shared Folders/Documents/Projetos/sinteli/biometria-applet/exportado/biometria-applet-search.jar" />
+
+	<target name="build">
+		<jar destfile="${temp.jar}" filesetmanifest="mergewithoutmain">
+			<manifest>
+				<attribute name="Main-Class" value="br.com.sinteli.utils.Main" />
+				<attribute name="Class-Path" value="." />
+			</manifest>
+			<fileset dir="//vmware-host/Shared Folders/Documents/Projetos/sinteli/biometria-applet/bin" />
+			<zipfileset excludes="META-INF/*.SF" src="//vmware-host/Shared Folders/Documents/Projetos/sinteli/biometria-applet/lib/NBioBSPJNI.jar" />
+			<zipfileset excludes="META-INF/*.SF" src="//vmware-host/Shared Folders/Documents/Projetos/sinteli/biometria-applet/lib/bio-lib.jar" />
+			<zipfileset excludes="META-INF/*.SF" src="//vmware-host/Shared Folders/Documents/Projetos/sinteli/biometria-applet/lib/gson-2.2.4.jar" />
+		</jar>
+
+		<!--
+		<signjar jar="${temp.jar}" alias="sinteli" storepass="carol1408" keystore="chaves.jks" keypass="carol1408" signedjar="${final.jar}" tsaurl="http://timestamp.comodoca.com/authenticode">
+		</signjar>
+		-->
+		<signjar jar="${temp.jar}" alias="sinteli" storepass="carol1408" keystore="chaves.jks" keypass="carol1408" signedjar="${final.jar}">
+		</signjar>
+		
+		<delete file="${temp.jar}"/>
+		
+	</target>
+	<!-- -tsa &quot;http://timestamp.comodoca.com/authenticode&quot; -->
+</project>

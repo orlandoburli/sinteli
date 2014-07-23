@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *btnTestarCripto;
+
+- (IBAction)cliqueTeste:(id)sender;
+
 @end

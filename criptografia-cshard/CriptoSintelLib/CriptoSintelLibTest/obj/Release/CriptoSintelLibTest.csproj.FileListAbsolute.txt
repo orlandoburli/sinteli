@@ -5,3 +5,10 @@
 \\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\obj\Release\CriptoSintelLibTest.pdb
 \\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\bin\Release\CriptoSintelLibTest.exe
 \\vmware-host\Shared Folders\Documents\Projetos\sintel\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\obj\Release\CriptoSintelLibTest.exe
+\\vmware-host\Shared Folders\Documents\Projetos\sinteli\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\bin\Release\CriptoSintelLibTest.exe
+\\vmware-host\Shared Folders\Documents\Projetos\sinteli\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\bin\Release\CriptoSintelLibTest.pdb
+\\vmware-host\Shared Folders\Documents\Projetos\sinteli\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\bin\Release\CriptoSintelLib.dll
+\\vmware-host\Shared Folders\Documents\Projetos\sinteli\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\bin\Release\CriptoSintelLib.pdb
+\\vmware-host\Shared Folders\Documents\Projetos\sinteli\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\obj\Release\CriptoSintelLibTest.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\Projetos\sinteli\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\obj\Release\CriptoSintelLibTest.exe
+\\vmware-host\Shared Folders\Documents\Projetos\sinteli\criptografia-cshard\CriptoSintelLib\CriptoSintelLibTest\obj\Release\CriptoSintelLibTest.pdb

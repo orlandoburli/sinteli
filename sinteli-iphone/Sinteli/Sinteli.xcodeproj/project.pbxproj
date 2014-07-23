@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		435154431948A71B0071B153 /* libSinteliCripto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 435154421948A71B0071B153 /* libSinteliCripto.a */; };
+		431C1EC0194CE2CA008A9186 /* libSinteliCripto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 431C1EBB194CE09D008A9186 /* libSinteliCripto.a */; };
 		43925DC71947D499009A54A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925DC61947D499009A54A8 /* Foundation.framework */; };
 		43925DC91947D499009A54A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925DC81947D499009A54A8 /* CoreGraphics.framework */; };
 		43925DCB1947D499009A54A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43925DCA1947D499009A54A8 /* UIKit.framework */; };
@@ -25,6 +25,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		431C1EBA194CE09D008A9186 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 431C1EB5194CE09D008A9186 /* SinteliCripto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43925E041947D50F009A54A8;
+			remoteInfo = SinteliCripto;
+		};
+		431C1EBC194CE09D008A9186 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 431C1EB5194CE09D008A9186 /* SinteliCripto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43925E141947D50F009A54A8;
+			remoteInfo = SinteliCriptoTests;
+		};
+		431C1EBE194CE2B8008A9186 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 431C1EB5194CE09D008A9186 /* SinteliCripto.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 43925E031947D50F009A54A8;
+			remoteInfo = SinteliCripto;
+		};
 		43925DE91947D49C009A54A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 43925DBB1947D499009A54A8 /* Project object */;
@@ -35,7 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		435154421948A71B0071B153 /* libSinteliCripto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSinteliCripto.a; path = "SinteliCripto/build/Debug-iphoneos/libSinteliCripto.a"; sourceTree = "<group>"; };
+		431C1EB5194CE09D008A9186 /* SinteliCripto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SinteliCripto.xcodeproj; path = ../SinteliCripto/SinteliCripto.xcodeproj; sourceTree = "<group>"; };
 		43925DC31947D499009A54A8 /* Sinteli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sinteli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43925DC61947D499009A54A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43925DC81947D499009A54A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +76,9 @@
 		43925DED1947D49C009A54A8 /* SinteliTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SinteliTests-Info.plist"; sourceTree = "<group>"; };
 		43925DEF1947D49C009A54A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43925DF11947D49C009A54A8 /* SinteliTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinteliTests.m; sourceTree = "<group>"; };
+		43F0B5AE194C233F007329F9 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		43F0B5AF194C233F007329F9 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		43F0B5B0194C233F007329F9 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435154431948A71B0071B153 /* libSinteliCripto.a in Frameworks */,
+				431C1EC0194CE2CA008A9186 /* libSinteliCripto.a in Frameworks */,
 				43925DC91947D499009A54A8 /* CoreGraphics.framework in Frameworks */,
 				43925DCB1947D499009A54A8 /* UIKit.framework in Frameworks */,
 				43925DC71947D499009A54A8 /* Foundation.framework in Frameworks */,
@@ -82,9 +106,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		431C1EB4194CE05B008A9186 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				431C1EB5194CE09D008A9186 /* SinteliCripto.xcodeproj */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		431C1EB6194CE09D008A9186 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				431C1EBB194CE09D008A9186 /* libSinteliCripto.a */,
+				431C1EBD194CE09D008A9186 /* SinteliCriptoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		43925DBA1947D499009A54A8 = {
 			isa = PBXGroup;
 			children = (
+				431C1EB4194CE05B008A9186 /* Library */,
 				43925DCC1947D49B009A54A8 /* Sinteli */,
 				43925DEB1947D49C009A54A8 /* SinteliTests */,
 				43925DC51947D499009A54A8 /* Frameworks */,
@@ -104,7 +146,6 @@
 		43925DC51947D499009A54A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				435154421948A71B0071B153 /* libSinteliCripto.a */,
 				43925DC61947D499009A54A8 /* Foundation.framework */,
 				43925DC81947D499009A54A8 /* CoreGraphics.framework */,
 				43925DCA1947D499009A54A8 /* UIKit.framework */,
@@ -170,6 +211,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				431C1EBF194CE2B8008A9186 /* PBXTargetDependency */,
 			);
 			name = Sinteli;
 			productName = Sinteli;
@@ -218,10 +260,17 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 43925DBA1947D499009A54A8;
 			productRefGroup = 43925DC41947D499009A54A8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 431C1EB6194CE09D008A9186 /* Products */;
+					ProjectRef = 431C1EB5194CE09D008A9186 /* SinteliCripto.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				43925DC21947D499009A54A8 /* Sinteli */,
@@ -229,6 +278,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		431C1EBB194CE09D008A9186 /* libSinteliCripto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSinteliCripto.a;
+			remoteRef = 431C1EBA194CE09D008A9186 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		431C1EBD194CE09D008A9186 /* SinteliCriptoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SinteliCriptoTests.xctest;
+			remoteRef = 431C1EBC194CE09D008A9186 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		43925DC11947D499009A54A8 /* Resources */ = {
@@ -273,6 +339,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		431C1EBF194CE2B8008A9186 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SinteliCripto;
+			targetProxy = 431C1EBE194CE2B8008A9186 /* PBXContainerItemProxy */;
+		};
 		43925DEA1947D49C009A54A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 43925DC21947D499009A54A8 /* Sinteli */;
@@ -285,6 +356,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				43925DD01947D49B009A54A8 /* en */,
+				43F0B5AF194C233F007329F9 /* pt-BR */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -293,6 +365,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				43925DD91947D49B009A54A8 /* Base */,
+				43F0B5AE194C233F007329F9 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -301,6 +374,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				43925DEF1947D49C009A54A8 /* en */,
+				43F0B5B0194C233F007329F9 /* pt-BR */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -311,7 +385,7 @@
 		43925DF31947D49C009A54A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -340,7 +414,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/orlandoburli/Documents/Projetos/sinteli/sinteli-iphone/SinteliCripto/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -349,7 +428,7 @@
 		43925DF41947D49C009A54A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -372,7 +451,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/orlandoburli/Documents/Projetos/sinteli/sinteli-iphone/SinteliCripto/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -386,13 +470,25 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sinteli/Sinteli-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"include/**",
+				);
 				INFOPLIST_FILE = "Sinteli/Sinteli-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SinteliCripto/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SinteliCripto-dfaegldyahxmbidxglvkmkqtrhkc/Build/Products/Debug-iphoneos",
+					"include/**",
+				);
+				OTHER_LDFLAGS = (
+					"-OjbC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,13 +501,25 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sinteli/Sinteli-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"include/**",
+				);
 				INFOPLIST_FILE = "Sinteli/Sinteli-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SinteliCripto/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SinteliCripto-dfaegldyahxmbidxglvkmkqtrhkc/Build/Products/Debug-iphoneos",
+					"include/**",
+				);
+				OTHER_LDFLAGS = (
+					"-OjbC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

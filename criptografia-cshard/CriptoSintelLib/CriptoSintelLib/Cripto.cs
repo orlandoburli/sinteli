@@ -34,6 +34,8 @@ namespace Cripto
                 digito = 1;
             }
 
+            digitoStr = digito.ToString();
+
             String result = "";
 
             for (int i = 0; i < value.Length; i++)

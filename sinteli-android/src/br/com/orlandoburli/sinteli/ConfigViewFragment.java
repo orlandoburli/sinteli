@@ -1,6 +1,6 @@
 package br.com.orlandoburli.sinteli;
 
-import br.com.orlandoburli.sintel.R;
+import br.com.orlandoburli.sinteli.R;
 import br.com.orlandoburli.sinteli.model.be.ConfigBe;
 import br.com.orlandoburli.sinteli.model.be.exceptions.ConfigException;
 import br.com.orlandoburli.sinteli.model.dao.Dicionario;
@@ -8,7 +8,7 @@ import br.com.orlandoburli.sinteli.model.vo.ConfigVo;
 import br.com.orlandoburli.sinteli.utils.FontUtils;
 import br.com.orlandoburli.sinteli.utils.FragmentUtils;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;

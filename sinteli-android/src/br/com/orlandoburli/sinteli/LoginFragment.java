@@ -2,10 +2,9 @@ package br.com.orlandoburli.sinteli;
 
 import java.util.List;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+import android.app.Fragment;
+import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,8 +13,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
-import br.com.orlandoburli.sintel.R;
 import br.com.orlandoburli.sinteli.model.be.ConfigBe;
+import br.com.orlandoburli.sinteli.model.be.services.RetornoLoginService;
 import br.com.orlandoburli.sinteli.model.vo.ConfigVo;
 import br.com.orlandoburli.sinteli.utils.FontUtils;
 import br.com.orlandoburli.sinteli.utils.FragmentUtils;
@@ -38,34 +37,35 @@ public class LoginFragment extends Fragment {
 			public void onClick(View v) {
 
 				try {
+
 					Spinner spinnerConfig = (Spinner) view.findViewById(R.id.spinnerConfig);
 
-					ConfigVo config = (ConfigVo) spinnerConfig.getSelectedItem();
+					final ConfigVo config = (ConfigVo) spinnerConfig.getSelectedItem();
 
 					if (config == null) {
-
-						AlertDialog dialog = new AlertDialog.Builder(view.getContext()).create();
-						dialog.setTitle("Informação");
-						dialog.setMessage("Nenhum condomínio selecionado!");
-						dialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
-
-							@Override
-							public void onClick(DialogInterface dialog, int which) {
-								dialog.cancel();
-							}
-						});
-						dialog.show();
+						Toast.makeText(getActivity(), "Nenhum condomínio selecionado!", Toast.LENGTH_LONG).show();
 						return;
 					}
 
-					boolean login = new ConfigBe(getActivity()).login(config);
+					final ProgressDialog pdia = new ProgressDialog(v.getContext());
+					pdia.setMessage("Entrando, aguarde...");
+					pdia.show();
 
-					if (login) {
-						Toast.makeText(getActivity(), "Login efetuado com sucesso!", Toast.LENGTH_LONG).show();
-						FragmentUtils.gotoFragment(new HomeFragment(), getFragmentManager());
-					} else {
-						Toast.makeText(getActivity(), "Configuração inválida, verifique o cadastro do condomínio!", Toast.LENGTH_LONG).show();
-					}
+					new ConfigBe(getActivity()).login(config, new RetornoLoginService() {
+
+						@Override
+						public void onRetornoLogin(boolean isLogin) {
+							pdia.dismiss();
+
+							if (isLogin) {
+								Toast.makeText(getActivity(), "Login efetuado com sucesso!", Toast.LENGTH_LONG).show();
+								FragmentUtils.gotoFragment(new HomeFragment(config), getFragmentManager());
+							} else {
+								Toast.makeText(getActivity(), "Configuração inválida, verifique o cadastro do condomínio!", Toast.LENGTH_LONG).show();
+							}
+						}
+					});
+
 				} finally {
 					//
 				}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fundo_app" >
+    
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/titulo_lista_acessos"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="115dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dip" >
+
+        <ListView
+            android:id="@+id/listAcessos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:columnCount="2"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:rowCount="1"
+        android:stretchMode="columnWidth"
+        android:padding="10dp">
+
+     
+        <Button
+            android:id="@+id/btnVoltarLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/back_orange"
+            android:text="@string/label_button_voltar"
+            android:textColor="@color/cor_texto_botoes"
+            android:drawableLeft="@drawable/undo"
+            android:textSize="20sp" />
+    </GridLayout>
+    
+</RelativeLayout>

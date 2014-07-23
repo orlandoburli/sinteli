@@ -18,4 +18,20 @@ public class Dicionario {
 		public final String[] COLUNAS = { Colunas.ID_CONFIG, Colunas.NOME, Colunas.HOST, Colunas.USUARIO, Colunas.SENHA, Colunas.PADRAO, Colunas.CHAVE_CRIPTO };
 
 	}
+	
+	public class LogAcesso {
+		public static final String TABELA_LOG_ACESSO = "log_acesso";
+		
+		public final class Colunas {
+			public static final String ID_ACESSO = "id";
+			public static final String DATA_HORA = "data_hora";
+			public static final String PORTA = "porta";
+			public static final String DESTINO = "destino";
+			public static final String OBSERVACAO = "observacao";
+			public static final String NOME = "nome";
+			public static final String SEXO = "sexo";
+			public static final String FOTO = "foto";
+			
+		}
+	}
 }

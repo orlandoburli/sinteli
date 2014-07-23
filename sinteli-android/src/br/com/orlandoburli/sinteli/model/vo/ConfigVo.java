@@ -2,6 +2,8 @@ package br.com.orlandoburli.sinteli.model.vo;
 
 public class ConfigVo extends BaseVo {
 
+	private static final long serialVersionUID = 1L;
+
 	private Integer id;
 	private String nome;
 	private String host;

@@ -1,0 +1,2 @@
+"C:\Program Files (x86)\Java\jdk1.5.0_10\bin\jarsigner.exe" -keystore D:\CSIONLINE\CSI_ESCOLAR\CSharpModel\web\BiometriaControl\biometria\jar\mykey.jks -storepass 123456 -signedjar biometria-applet_2.jar biometria-applet_.jar key
+pause

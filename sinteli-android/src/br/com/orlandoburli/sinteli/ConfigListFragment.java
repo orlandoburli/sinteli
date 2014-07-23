@@ -2,14 +2,14 @@ package br.com.orlandoburli.sinteli;
 
 import java.util.List;
 
-import br.com.orlandoburli.sintel.R;
+import br.com.orlandoburli.sinteli.R;
 import br.com.orlandoburli.sinteli.model.be.ConfigBe;
 import br.com.orlandoburli.sinteli.model.vo.ConfigVo;
 import br.com.orlandoburli.sinteli.utils.FontUtils;
 import br.com.orlandoburli.sinteli.utils.FragmentUtils;
 import br.com.orlandoburli.sinteli.view.adapters.ConfigAdapter;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;

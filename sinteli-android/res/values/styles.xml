@@ -1,10 +1,10 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"></style>
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar"></style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
-        <item name="android:textColor">@color/cor_texto_app</item>
+        <!-- <item name="android:textColor">@color/cor_texto_app</item> -->
         <item name="android:textSize">14sp</item>
     </style>
 

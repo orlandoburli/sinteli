@@ -3,4 +3,5 @@
     <issue id="ButtonStyle">
         <ignore path="res/layout/home_fragment.xml" />
     </issue>
+    <issue id="InflateParams" severity="ignore" />
 </lint>

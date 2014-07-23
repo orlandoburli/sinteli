@@ -11,8 +11,8 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
-import br.com.orlandoburli.sintel.utils.cripto.Cripto;
-import br.com.orlandoburli.sintel.utils.cripto.exceptions.CriptoException;
+import br.com.orlandoburli.sinteli.utils.cripto.Cripto;
+import br.com.orlandoburli.sinteli.utils.cripto.exceptions.CriptoException;
 import android.os.AsyncTask;
 
 @Deprecated
